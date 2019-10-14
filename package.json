@@ -1,13 +1,13 @@
 {
-  "name": "typed-path",
-  "version": "2.0.0",
+  "name": "@neatcapital/typed-path",
+  "version": "2.0.1",
   "description": "Type safe object string paths for typescript.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bsalex/typed-path.git"
+    "url": "https://github.com/NeatCapitalOrg/typed-path.git"
   },
-  "author": "Oleksandr Beshchuk <bs.alex.mail@gmail.com>",
+  "author": "Neat Capital, Oleksandr Beshchuk <bs.alex.mail@gmail.com>",
   "license": "Apache-2.0",
   "dependencies": {},
   "keywords": [
@@ -30,7 +30,8 @@
     "test": "mocha --require ts-node/register index.spec.ts",
     "lint": "tslint 'src/**/*.ts' 'src/**/*.tsx'",
     "prepush": "yarn lint && yarn build && git diff --exit-code",
-    "build": "tsc"
+    "build": "tsc",
+    "deploy": "npm run build && npm publish --userconfig=.npmrc"
   },
   "devDependencies": {
     "@types/chai": "^3.4.34",

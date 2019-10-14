@@ -1,4 +1,5 @@
 # Typed Path
+This is a temporary fork of https://github.com/bsalex/typed-path with fixes for newer typescript versions and other misc improvements. Hopefully this will be merged into bsalex's repo soon. 
 
 ---
 
